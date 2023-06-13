@@ -1,5 +1,5 @@
 {
-  "name": "project-command-line-inventory-app",
+  "name": "project-command-line-inventory",
   "version": "1.0.0",
   "description": "A prototype for a mini shop that sells organic fruis and vegetables",
   "main": "index.js",

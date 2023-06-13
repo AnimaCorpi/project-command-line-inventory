@@ -93,7 +93,7 @@ function underThree(organicsData){
     return underThree
 }
 
-console.log(underThree(organicsData))
+// console.log(underThree(organicsData)) ✅ works
 
 
 module.exports = {
