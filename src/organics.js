@@ -82,9 +82,24 @@ function findItemDetails(organicsData, name) {
 // console.log(findItemDetails(organicsData, "apple")) ✅ works
 // console.log(findItemDetails(organicsData, "ice cream")) ✅ works
 
+//logs all items under three dollars that are in stock
+function underThree(organicsData){
+    let underThree = []
+    for (const items of organicsData) {
+        if(items.price <= 3 && items.quantity > 0){
+            underThree.push(items)
+        }
+    }
+    return underThree
+}
+
+console.log(underThree(organicsData))
+
+
 module.exports = {
     findItemDetails,
     removeFromInventory,
     addToInventory,
-    checkInventory
+    checkInventory,
+    underThree
 }

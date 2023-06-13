@@ -10,7 +10,6 @@ A prototype for a mini shop that sells organic fruis and vegetables
 -- A user can delete an item.
 -- A user can update an item.
 -- When a user performs an action like creating or deleting an item, the data file is updated correctly. If the JSON is malformed, there is some logic to prevent writing to the file and thus corrupting the data file.
--- When a user creates an item a unique id is assigned to the new item.
 
 *working on these *
 -- Add a cart function where a user can add items to the shopping cart and see the total price and total number of each item
@@ -19,8 +18,8 @@ A prototype for a mini shop that sells organic fruis and vegetables
 ### Stretch goals
 
 - Add a new command that lets the user filter by a item property like:
-  - a true/false value (see all cookies that are vegan).
-  - a greater than/less than value (see all shoes that cost more than $100).
+  - a true/false value (see all items that are in stock).
+  - a greater than/less than value (see all items under 3 bucks).
 
 - Add unit testing with Jest.
 
