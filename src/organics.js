@@ -81,3 +81,10 @@ function findItemDetails(organicsData, name) {
 
 // console.log(findItemDetails(organicsData, "apple")) ✅ works
 // console.log(findItemDetails(organicsData, "ice cream")) ✅ works
+
+module.exports = {
+    findItemDetails,
+    removeFromInventory,
+    addToInventory,
+    checkInventory
+}
