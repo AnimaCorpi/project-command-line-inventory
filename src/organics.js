@@ -53,7 +53,7 @@ function addToInventory (organicsData, type, name, itemPrice, itemQuantity) {
 
 // node src/organics.js
 
-
+//removes a specified item from the inventory if found inside of the data set
 function removeFromInventory(organicsData, name) {
     for (let i = 0; i < organicsData.length; i++) {
         if (organicsData[i].itemName === name) {
@@ -64,4 +64,20 @@ function removeFromInventory(organicsData, name) {
 }
 // console.log(removeFromInventory(organicsData, "apple")) ✅ works
 
+//finds the full object details for a specific item if found inside the data set
+    //if not in the dataset, sends an error message
+function findItemDetails(organicsData, name) {
+    let foundItem = null
+    let i= 0;
+    while (i < organicsData.length && foundItem === null) {
+        let singleItem = organicsData[i];
+        if (organicsData[i].itemName === name) {
+            foundItem = singleItem;
+        }
+        i++
+    }
+    return foundItem||"We do not carry this item"
+}
 
+// console.log(findItemDetails(organicsData, "apple")) ✅ works
+// console.log(findItemDetails(organicsData, "ice cream")) ✅ works
